@@ -1,38 +1,13 @@
 {
-	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.client.ExampleModClient"
-		]
-	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~26.2",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "aimlock",
+  "version": "1.0.0",
+  "name": "AimLock",
+  "description": "Bam M de bat/tat tu dong ngam quai gan nhat khi danh hoac ban cung.",
+  "authors": ["Ban"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.aimlock.AimLockClient"] },
+  "depends": { "fabricloader": ">=0.15.0", "fabric-api": "*", "minecraft": "1.20.1", "java": ">=17" }
 }
